@@ -5,10 +5,10 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
-import { green } from '@material-ui/core/colors';
+import { green } from "@material-ui/core/colors";
 import { Button, FormControlLabel, TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -28,7 +28,7 @@ const TestCase = () => {
     setOpen(true);
   };
 
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = React.useState(false);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
